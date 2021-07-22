@@ -8,26 +8,516 @@
     <title>Digital Cow Market</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/63cb2a1b83.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <header>
+        <!-- navbar section -->
+
         <section>
-            <nav>
-                <div>
-                    <h1> Welcome to Naogaon Cow Market</h1>
-                </div>
-                <div>
-                    <img src="" alt="">
+            <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top">
+                <div class="container">
+                    <a class="navbar-brand p-0" href="#">
+                        <img src="images/logo.png" alt="" style="width: 55px; height: 50px;">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#category">Category</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-3">
+                            <li class="nav-item me-4">
+                                <a class="nav-link active" aria-current="page" href="#"><i
+                                        class="fas fa-sign-in-alt"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#"><i class="fas fa-sign-out-alt"></i></a>
+                            </li>
+
+                    </div>
                 </div>
             </nav>
         </section>
 
+        <!-- Introduction section -->
+        <section class="my-5">
+            <div class="bg-info">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="row d-flex justify-content-center align-items-center">
+                                <div class="col-lg-4 p-5 fs-5">
+                                    <h1>Steer</h1>
+                                    <p>A steer is a castrated male bovine. Male bovines are castrated when they are
+                                        young and before they develop the bull’s physical characteristics</p>
+                                    <a href="https://www.farmanddairy.com/top-stories/how-to-determine-if-cattle-are-bulls-steers-cows-or-heifers/274534.html"
+                                        target="_blank"><button type="button" class="btn btn-danger">See
+                                            Details</button></a>
+                                </div>
+                                <div class="col-lg-7">
+                                    <img src="images/cow-6.png" class="d-block w-100 rounded-3" alt="...">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row d-flex justify-content-center align-items-center">
+                                <div class="col-lg-4 p-5  fs-5">
+                                    <h1>Bulls</h1>
+                                    <p>A bull, also known as a sire, is a mature male bovine that is at least 2 years
+                                        old used for breeding purposes. Bulls are usually not used for meat.</p>
+                                    <a href="https://www.farmanddairy.com/top-stories/how-to-determine-if-cattle-are-bulls-steers-cows-or-heifers/274534.html"
+                                        target="_blank"><button type="button" class="btn btn-danger">See
+                                            Details</button></a>
+                                </div>
+                                <div class="col-lg-7">
+                                    <img src="images/cow-9.png" class="d-block w-100 rounded-3" alt="...">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row d-flex justify-content-center align-items-center">
+                                <div class="col-lg-4 p-5 fs-5">
+                                    <h1>Cows</h1>
+                                    <p>A cow is a mature female bovine that has had at least one calf. Cows have larger
+                                        hips and thicker middles. Compared to bulls, they look feminine
+                                    </p>
+                                    <a href="https://www.farmanddairy.com/top-stories/how-to-determine-if-cattle-are-bulls-steers-cows-or-heifers/274534.html"
+                                        target="_blank"><button type="button" class="btn btn-danger">See
+                                            Details</button></a>
+                                </div>
+                                <div class="col-lg-7">
+                                    <img src="images/cow-7.png" class="d-block w-100 rounded-3" alt="...">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
 
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+
+
+        <!-- category section -->
+        <section id="category" class="container my-5 b-3">
+            <h1 class="py-5">Category</h1>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed fs-5 bg-warning" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            Cow Price (20k - 50k)
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>-Native Cow <br>
+                                -Shahiwal Cow <br>
+                                -Jersey cross <br>
+                                -Jersey <br>
+                                -Native Brown <br>
+                                -Native Red <br>
+                                Weight: 40kg-100kg</p>
+                            <a href="#1"><button type="button" class="btn btn-danger">See
+                                    Details</button></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed fs-5 bg-success" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                            aria-controls="flush-collapseTwo">
+                            Cow Price (50k - 1 Lakh)
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>-Native Cow <br>
+                                -Shahiwal Cow <br>
+                                -Jersey cross <br>
+                                -Jersey <br>
+                                -Native Brown <br>
+                                -Native Red <br>
+                                Weight: 100kg+</p>
+
+                            <a href="#2"><button type="button" class="btn btn-danger">See
+                                    Details</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed fs-5 bg-danger" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Cow Price (1 Lakh +)
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>-Native Cow <br>
+                                -Shahiwal Cow <br>
+                                -Jersey cross <br>
+                                -Jersey <br>
+                                -Native Brown <br>
+                                -Native Red <br>
+                                Weight: 200kg+
+
+                            </p>
+                            <a href="#3"><button type="button" class="btn btn-danger align-items-center">See
+                                    Details</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 20-50 Buy section -->
+        <section id="1" class="container my-5">
+            <h1 class="py-5">Price 20k-50k</h1>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 ">
+                        <img src="images/cow-6.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-warning">
+                            <h5 class="card-title">Price (20k-50k)</h5>
+                            <p class="card-text">
+                                -Native Cow <br>
+                                -Shahiwal Cow <br>
+                                -Jersey cross <br>
+                                -Jersey <br>
+                                -Native Brown <br>
+                                -Native Red <br>
+                                Weight: 40kg-100kg</p>
+                            </p>
+                        </div>
+                        <div class="p-3">
+                            <a href="https://www.daraz.com.bd/gorur-haat/"><button type="button"
+                                    class="btn btn-danger">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 ">
+                        <img src="images/cow-7.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-warning">
+                            <h5 class="card-title">Price (20k-50k)</h5>
+                            <p class="card-text">
+                                -Native Cow <br>
+                                -Shahiwal Cow <br>
+                                -Jersey cross <br>
+                                -Jersey <br>
+                                -Native Brown <br>
+                                -Native Red <br>
+                                Weight: 40kg-100kg</p>
+                        </div>
+                        <div class="p-3">
+                            <a href="https://www.daraz.com.bd/gorur-haat/"><button type="button"
+                                    class="btn btn-danger">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 ">
+                        <img src="images/cow-9.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-warning">
+                            <h5 class="card-title">Price (20k-50k)</h5>
+                            <p class="card-text">
+                                -Native Cow <br>
+                                -Shahiwal Cow <br>
+                                -Jersey cross <br>
+                                -Jersey <br>
+                                -Native Brown <br>
+                                -Native Red <br>
+                                Weight: 40kg-100kg
+                            </p>
+                        </div>
+                        <div class="p-3">
+                            <a href="https://www.daraz.com.bd/gorur-haat/"><button type="button"
+                                    class="btn btn-danger">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 50-1lakh Buy section -->
+        <section id="2" class="container my-5">
+            <h1 class="py-5">Price 50k-1 lakh</h1>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 ">
+                        <img src="images/cow-6.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-success">
+                            <h5 class="card-title">Price (50k-1 lakh)</h5>
+                            <p class="card-text">
+                                -Native Cow <br>
+                                -Shahiwal Cow <br>
+                                -Jersey cross <br>
+                                -Jersey <br>
+                                -Native Brown <br>
+                                -Native Red <br>
+                                Weight: 100kg-200kg</p>
+                            </p>
+                        </div>
+                        <div class="p-3">
+                            <a href="https://www.daraz.com.bd/gorur-haat/"><button type="button"
+                                    class="btn btn-danger">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 ">
+                        <img src="images/cow-7.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-success">
+                            <h5 class="card-title">Price (50k-1 lakh)</h5>
+                            <p class="card-text">
+                                -Native Cow <br>
+                                -Shahiwal Cow <br>
+                                -Jersey cross <br>
+                                -Jersey <br>
+                                -Native Brown <br>
+                                -Native Red <br>
+                                Weight: 100kg-200kg</p>
+                        </div>
+                        <div class="p-3">
+                            <a href="https://www.daraz.com.bd/gorur-haat/"><button type="button"
+                                    class="btn btn-danger">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 ">
+                        <img src="images/cow-9.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-success">
+                            <h5 class="card-title">Price (50k-1 lakh)</h5>
+                            <p class="card-text">
+                                -Native Cow <br>
+                                -Shahiwal Cow <br>
+                                -Jersey cross <br>
+                                -Jersey <br>
+                                -Native Brown <br>
+                                -Native Red <br>
+                                Weight: 100kg-200kg
+                            </p>
+                        </div>
+                        <div class="p-3">
+                            <a href="https://www.daraz.com.bd/gorur-haat/"><button type="button"
+                                    class="btn btn-danger">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- 1lakh+ Buy section -->
+        <section id="3" class="container my-5">
+            <h1 class="py-5">Price 1 Lakh+</h1>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 ">
+                        <img src="images/cow-6.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-danger">
+                            <h5 class="card-title">Price (1 Lakh+)</h5>
+                            <p class="card-text">
+                                -Native Cow <br>
+                                -Shahiwal Cow <br>
+                                -Jersey cross <br>
+                                -Jersey <br>
+                                -Native Brown <br>
+                                -Native Red <br>
+                                Weight: 200kg+</p>
+                            </p>
+                        </div>
+                        <div class="p-3">
+                            <a href="https://www.daraz.com.bd/gorur-haat/"><button type="button"
+                                    class="btn btn-danger">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 ">
+                        <img src="images/cow-7.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-danger">
+                            <h5 class="card-title">Price (1 Lakh+)</h5>
+                            <p class="card-text">
+                                -Native Cow <br>
+                                -Shahiwal Cow <br>
+                                -Jersey cross <br>
+                                -Jersey <br>
+                                -Native Brown <br>
+                                -Native Red <br>
+                                Weight: 200kg+</p>
+                        </div>
+                        <div class="p-3">
+                            <a href="https://www.daraz.com.bd/gorur-haat/"><button type="button"
+                                    class="btn btn-danger">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 ">
+                        <img src="images/cow-9.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-danger">
+                            <h5 class="card-title">Price (1 Lakh+)</h5>
+                            <p class="card-text">
+                                -Native Cow <br>
+                                -Shahiwal Cow <br>
+                                -Jersey cross <br>
+                                -Jersey <br>
+                                -Native Brown <br>
+                                -Native Red <br>
+                                Weight: 200kg+
+                            </p>
+                        </div>
+                        <div class="p-3">
+                            <a href="https://www.daraz.com.bd/gorur-haat/"><button type="button"
+                                    class="btn btn-danger">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us -->
+        <section class="container my-5">
+            <h1 class="py-5">Contact Us</h1>
+            <form class="row g-3 bg-primary p-5">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">State</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Message</label>
+                    <input type="text" class="form-control p-3" id="message" placeholder="Write a short note">
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Agree With Me
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-danger">Submit</button>
+                </div>
+            </form>
+        </section>
+
+
+        <!-- about us -->
+        <section class="container my-5">
+            <h1 class="py-5">About Us</h1>
+            <div class="card text-center">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="true" href="https://www.daraz.com.bd/gorur-haat/"
+                                target="_blank">Facbook</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.daraz.com.bd/gorur-haat/" target="_blank">Youtube</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.daraz.com.bd/gorur-haat/"
+                                target="_blank">Instagram</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Visit Our Social</h5>
+                    <p class="card-text"><a href="https://www.daraz.com.bd/gorur-haat/" target="_blank"><i
+                                class="fab fa-instagram-square mx-1"></i></a>
+                        <a href="https://www.daraz.com.bd/gorur-haat/" target="_blank"><i
+                                class="fab fa-facebook mx-1"></i></a>
+                        <a href="https://www.daraz.com.bd/gorur-haat/" target="_blank"><i
+                                class="fab fa-youtube mx-1"></i></a>
+                        <a href="https://www.daraz.com.bd/gorur-haat/" target="_blank"><i
+                                class="fab fa-twitter mx-1"></i></a>
+                    </p>
+                    <a href="https://www.daraz.com.bd/gorur-haat/" target="_blank" class="btn btn-primary">Connect With
+                        Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <footer>
+        <div class="text-center my-5">
+            <p>Copyright © 2021 Digital Market by Asad</p>
+        </div>
+    </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
